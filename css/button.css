@@ -1,0 +1,17 @@
+.button {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: small;
+    background-color: #4f4f4f;
+    border: 1px solid #F28B37;
+}
+
+.button:hover {
+    font-size: medium;
+    font-style: italic;
+    font-size: small;
+    background-color: rgb(216, 178, 129);
+    border: 2px double rgb(174, 107, 6);
+    border-radius: 10px;
+}

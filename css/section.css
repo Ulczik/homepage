@@ -1,0 +1,42 @@
+.section {
+    border-top: 1.5px solid rgb(109, 115, 30);
+}
+
+.section__heder {
+    color: rgb(228, 122, 30);
+}
+
+.section__paragraph {
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(224, 123, 35)
+}
+
+.section__link {
+    color: rgb(180, 180, 159);
+    text-decoration: none;
+}
+
+.section__link:hover {
+    color: rgb(231, 184, 103);
+}
+
+.section__link:active {
+    color: rgb(232, 132, 33);
+}
+
+.section__image {
+    width: 35%;
+    display: block;
+    margin: 0 auto;
+}
+
+.section__image:hover {
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px 1px #F28B37;
+}
+
+.section__container {
+    overflow-x: auto;
+    padding-top: 10px;
+}

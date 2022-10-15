@@ -1,0 +1,23 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.body {
+    font-family: 'Chakra Petch', sans-serif;
+    max-width: 800px;
+    margin: auto;
+    background-color: #4f4f4f;
+    color: rgb(180, 180, 159);
+    line-height: 1.4;
+}
+
+.header {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(228, 122, 30);
+}

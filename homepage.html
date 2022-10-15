@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Homepage</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link href="css/style.css" rel="stylesheet">
+   <link href="css/container.css" rel="stylesheet">
+   <link href="css/navigation.css" rel="stylesheet">
+   <link href="css/mian.css" rel="stylesheet">
+   <link href="css/section.css" rel="stylesheet">
+   <link href="css/list.css" rel="stylesheet">
+   <link href="css/table.css" rel="stylesheet">
+   <link href="css/button.css" rel="stylesheet">
+   <link href="css/footer.css" rel="stylesheet">
+   <script defer src="js/script.js"></script>
+   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet">
+</head>
+
+<body class="body">
+   <div class="container">
+      <header class="header">Co nieco o mnie</header>
+      <nav class="navigation">
+         <ul class="navigation__list">
+            <li><a class="navigation__link" href="#aboutMe">Trochę o mnie</a></li>
+            <li><a class="navigation__link" href="#favouriteBooks">Ulubione książki</a></li>
+            <li><a class="navigation__link" href="#music">Czego słucham</a></li>
+            <li><a class="navigation__link" href="#myAnnimals">Moje zwierzaki</a></li>
+         </ul>
+      </nav>
+      <main class="main">
+         <section class="section">
+            <h1 class="section__heder" id="aboutMe">Trochę o mnie</h1>
+            <p>
+               Z zawodu jestem Technologiem Chemicznym, który w idealnym świecie powinien zajmować się procesami w
+               rafineriach.
+               Życie jest jednak zupełnie inne, pracowałam w laboratorium, następnie w dziale produktu i zapewnienia
+               jakości,
+               a
+               obecnie w logistyce. Lubię gdy dużo wokół się dzieje, więc zaczęłam kurs, który mile mnie zaskoczył. W
+               wolnej
+               chwili jeźdżę na rowerze, kręcę hula a w sezonie letnim nie może zabraknąć kajaków. Gdy jest barowa
+               pogoda układam puzzle, lub czytam książki.
+            <div>
+               <p class="section__paragraph" id="favouriteBooks">Ulubione ksiązki</p>
+               <ol class="list js-list">
+                  <li>Jarosław Grzędowicz - "Pan Lodowego Ogrodu</li>
+                  <li>Peter Watts - Ślepowidzenie</li>
+                  <li>Peter Watts - Trylogia Ryfterów</li>
+                  <li>Dan Simmons - Hyperion</li>
+                  <li>Steven Erikson - Malazańska Księga Poległych</li>
+               </ol>
+               <p>
+                  <button class="button js-list__button"><span class="js-list__themeName">Ukryj</span> listę</button>
+               </p>
+            </div>
+            <p>
+               Bardzo lubię malarstwo <b>Zdzisława Beksińskiego</b>. Uwielbiam słodycze, kawę i dobrą muzykę. Dobra
+               muzyka dla
+               każdego jest inna, ja osobiście słucham metalu, rocka oraz folku i muzyki filmowej.
+            </p>
+            <div class="section__container">
+               <table class="table" id="music">
+                  <caption class="caption">Czego słucham</caption>
+                  <thead>
+                     <tr class="table__row">
+                        <th class="table__cell table__header" scope="col">Tytuł</th>
+                        <th class="table__cell table__header" scope="col">Wykonawca</th>
+                        <th class="table__cell table__header" scope="col">Album</th>
+                        <th class="table__cell table__header" scope="col">Rok</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr class="table__row">
+                        <th class="table__cell table__header" scope="row">Inis Mona</th>
+                        <td class="table__cell">Eluveitie</td>
+                        <td class="table__cell">Slania</td>
+                        <td class="table__cell">2008</td>
+                     </tr>
+                     <tr class="table__row">
+                        <th class="table__cell table__header" scope="row">Born in winter</th>
+                        <td class="table__cell">Gojira</td>
+                        <td class="table__cell">LEnfant Sauvage</td>
+                        <td class="table__cell">2012</td>
+                     </tr>
+                     <tr class="table__row">
+                        <th class="table__cell table__header" scope="row">Right in two</th>
+                        <td class="table__cell" rowspan="2">TOOL</td>
+                        <td class="table__cell" rowspan="2">10,000 days</td>
+                        <td class="table__cell" rowspan="2">2006</td>
+                     </tr>
+                     <tr class="table__row">
+                        <th class="table__cell table__header" scope="row">Vicarious</th>
+                     </tr>
+                     <tr class="table__row">
+                        <th class="table__cell table__header" scope="row">Love, hate, sex, pain</th>
+                        <td class="table__cell">Godsmack</td>
+                        <td class="table__cell">The Oracle</td>
+                        <td class="table__cell">2010</td>
+                     </tr>
+                     <tr class="table__row">
+                        <th class="table__cell table__header" scope="row">Did my time</th>
+                        <td class="table__cell">Korn</td>
+                        <td class="table__cell">Take a Look in the Mirror</td>
+                        <td class="table__cell">2003</td>
+                     </tr>
+                     <tr class="table__row">
+                        <th class="table__cell table__header" scope="row">Lit</th>
+                        <td class="table__cell">LAY</td>
+                        <td class="table__cell">Lit</td>
+                        <td class="table__cell">2020</td>
+                     </tr>
+                     <tr class="table__row">
+                        <th class="table__cell table__header" scope="row">In the House, in a Heartbeat</th>
+                        <td class="table__cell">John Murphy</td>
+                        <td class="table__cell">28 Days later metal remix</td>
+                        <td class="table__cell">2018</td>
+                     </tr>
+               </table>
+               </tbody>
+            </div>
+         </section>
+         <section class="section">
+            <h2 class="section__heder" id="myAnnimals">Moje zwierzaki</h2>
+            <p>
+               Zwierzęta a w szczególności psy, to wspaniali przyjaciele, jeśli okarze się im trchę dobroci i miłości.
+               Ares to
+               przecudowny psiak, który wygląda dość groźnie, ale gdy tylko pozna się go bliżej, okazuje się, że jest
+               <em>pacyfistą</em>. Dla niego mogła by istnieć tylko zima, ewentualnie jesień. Gdy jego pani zamarza na
+               kość, on bawi się w najlepsze w największej zaspie.
+            </p>
+            <p>
+               <img class="section__image js-section__image-fullScrDog" src="https://i.postimg.cc/44FB67Qr/ares.jpg"
+                  alt="ares">
+            </p>
+            <p>
+               <button class="button js-button-fullScrDog">Powiększ obraz</button>
+            </p>
+            <p>
+               Karniwal i Hanibal, to z kolei parka <b>agam błotnych</b>. Są to bardzo
+               interesujące
+               zwierzęta, podobo inteligencję mają zbliżoną do kotów. Podobno gadów nie da się oswoić, ale chyba tak
+               samo jest
+               z kotami, nie ma bezpańskich kotów, co najwyżej sa bezdomne. Podczas pory karmienia jaszczurki skaczą po
+               całym
+               akwarium, a
+               najbardziej efektowne są skoki z gałęzi do basenu za ofiarą. Jeśli mach ochotę poczytaj <a
+                  class="section__link" href="https://www.terrarium.com.pl/agama-blotna/" rel="noreferrer noopener"
+                  target="_blank">więcej o
+                  agamach</a>
+            </p>
+            <p>
+               <img class="section__image js-section__image-fullScrLizard" src="https://i.postimg.cc/4yMPsq3J/agamy.jpg"
+                  alt="agamy">
+            </p>
+            <p>
+               <button class="button js-button-fullScrLizard">Powiększ obraz</button>
+            </p>
+         </section>
+         <footer class="footer">
+            Gdy jest ci smutno, jest Ci źle, chcesz się wyszaleć lub oczyścić umysł rzuć wszystko i wyjedź w Bieszdady.
+            <p>
+               <button class="button js-button-changeBackground"><span class="js-themeNameBackground">Jasne</span>
+                  tło</button>
+            </p>
+         </footer>
+      </main>
+   </div>
+</body>
+
+</html>

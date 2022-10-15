@@ -1,0 +1,9 @@
+.list {
+    line-height: 1.5;
+    list-style-type: upper-roman;
+}
+
+.list-hide {
+    display: none;
+}
+

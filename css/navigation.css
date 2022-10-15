@@ -1,0 +1,16 @@
+.navigation__list {
+    list-style: none;
+}
+
+.navigation__link {
+    color: rgb(180, 180, 159);
+    text-decoration: none;
+}
+
+.navigation__link:hover {
+    color: rgb(231, 184, 103);
+}
+
+.navigation__link:active {
+    color: rgb(232, 132, 33);
+}
