@@ -1,34 +1,48 @@
-console.log("Hejka!");
+{
+    const welcome = () => {
+        console.log("Hejka!")
+    }
 
-let listTohide = document.querySelector(".js-list");
-let listButton = document.querySelector(".js-list__button");
-let listThemeName = document.querySelector(".js-list__themeName");
+    const toggleBackground = () => {
+        body = document.documentElement;
+        const themeName = document.querySelector(".js-themeNameBackground");
 
-listButton.addEventListener("click", () => {
-    listTohide.classList.toggle("list-hide");
-    listThemeName.innerText = listTohide.classList.contains("list-hide") ? "Pokaż" : "Ukryj"
-});
+        body.classList.toggle("whiteBackground");
+        themeName.innerText = body.classList.contains("whiteBackground") ? "Ciemne" : "Jasne"
+    }
 
-let imgDog = document.querySelector(".js-section__image-fullScrDog");
-let buttonDog = document.querySelector(".js-button-fullScrDog");
+    const toggleList = () => {
+        const listTohide = document.querySelector(".js-list");
+        const listThemeName = document.querySelector(".js-list__themeName");
 
-buttonDog.addEventListener("click", () => {
-    imgDog.requestFullscreen();
-})
+        listTohide.classList.toggle("list-hide");
+        listThemeName.innerText = listTohide.classList.contains("list-hide") ? "Pokaż" : "Ukryj"
+    }
 
-let buttonLizard = document.querySelector(".js-button-fullScrLizard");
-let imgLizard = document.querySelector(".js-section__image-fullScrLizard");
+    const onFullScrDog = () => {
+        const imgDog = document.querySelector(".js-section__image-fullScrDog");
+        imgDog.requestFullscreen();
+    }
 
-buttonLizard.addEventListener("click", () => {
-    imgLizard.requestFullscreen();
-})
+    const onFullScrLizard = () => {
+        const imgLizard = document.querySelector(".js-section__image-fullScrLizard");
+        imgLizard.requestFullscreen();
+    }
 
-let buttonChangeBackground = document.querySelector(".js-button-changeBackground");
-let themeName = document.querySelector(".js-themeNameBackground");
-let body = document.querySelector(".body");
+    const init = () => {
+        const listButton = document.querySelector(".js-list__button");
+        listButton.addEventListener("click", toggleList);
 
-buttonChangeBackground.addEventListener("click", () => {
-    body.classList.toggle("whiteBackground");
-    themeName.innerText = body.classList.contains("whiteBackground") ? "Ciemne" : "Jasne"
-});
+        const buttonDog = document.querySelector(".js-button-fullScrDog");
+        buttonDog.addEventListener("click", onFullScrDog);
+        
+        const buttonLizard = document.querySelector(".js-button-fullScrLizard");
+        buttonLizard.addEventListener("click", onFullScrLizard);
 
+        const buttonChangeBackground = document.querySelector(".js-button-changeBackground");
+        buttonChangeBackground.addEventListener("click", toggleBackground);
+
+        welcome();
+    }
+    init();
+}
